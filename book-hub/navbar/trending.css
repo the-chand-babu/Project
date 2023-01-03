@@ -1,0 +1,371 @@
+/* ===========CSS FOR TRENDING< CLASSIC AND POPULAR PAGE============= */
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background-color: rgb(207, 205, 205);
+}
+
+
+
+
+/* navbar bar div */
+
+#logout{
+    display: none;
+}
+#Username{
+    display: none;
+}
+
+#header {
+
+    width: 100%;
+    margin: auto;
+    height: 5.6em;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 12px 5px yellow;
+    background-color: white;
+    /* background-color:#A1C349; */
+    /* background-color:rgb(160, 160, 160); */
+    /* background-image: linear-gradient(to right top, #b60cf2, #9e009c, #730058, #3e0a27, #000000); */
+    /* background-image: url(/image/fcdf12ab3c0e48d7908ffc9a78fe5c93--library-bookshelves-bookcases.jpg);
+    background-size: contain; */
+
+
+}
+#list{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+#header #list{
+    display: flex;
+    justify-content: space-between;
+    /* background: orange; */
+    width: 900px;
+    margin-left: 20px;
+}
+
+#logo {
+    /* width: 11rem; */
+    /* background-color: aqua; */
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    font-size: 35px;
+}
+
+#logo-book-icon {
+    font-size: 3rem;
+    color: red;
+}
+
+/* .fa-book{
+    color:black;
+} */
+
+#logo>h2 {
+    /* color: rgb(32, 99, 86); */
+
+    font-size: 1.9rem;
+    font-style: italic;
+}
+
+#logo-span {
+    /* color: rgb(35, 163, 237); */
+    color: orange;
+}
+
+#mycart {
+    color: green;
+    font-size: 1.3rem;
+}
+
+#mycart:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+.browse-icon {
+    position: relative;
+    font-size: 1.3rem;
+
+    color: green;
+
+
+}
+
+.browse-icon>i {
+    margin-left: -5px;
+    font-size: 18px;
+}
+
+.browse-icon:hover {
+    /* background-color: red; */
+    color: orange;
+
+    cursor: pointer;
+}
+
+.browse-list {
+
+    position: absolute;
+    right: -68px;
+    top: 30px;
+    font-size: 15px;
+    width: 150px;
+    list-style: none;
+    display: block;
+    display: none;
+    z-index: 999;
+
+
+}
+
+.browse-list li {
+    border: 1px solid rgb(142, 138, 138);
+    height: 40px;
+    width: 100%;
+
+    text-align: center;
+    background: green;
+    color: orange;
+
+}
+
+.browse-list li:hover {
+    color: aqua;
+}
+
+.browse-list.active {
+    display: block;
+}
+
+
+
+#search-div {
+    /* border: 1px solid rgb(192, 66, 66); */
+    border: 1px solid green;
+    border-radius: 30px;
+
+}
+
+#bycategory {
+    border: none;
+    font-size: 20px;
+    width: 3rem;
+    border-radius: 30px 0 0 30px;
+
+
+}
+
+#search-bar {
+    border: none;
+    outline: none;
+    font-size: 20px;
+
+
+
+
+}
+
+#search-btn {
+    border: none;
+    background-color: white;
+    height: 100%;
+    border-radius: 0 30px 30px 0px;
+
+}
+
+#search-btn>i {
+    background-color: white;
+    font-size: 25px;
+}
+
+#button-div {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-right: 3rem;
+    position: relative;
+}
+
+#button-div span {
+    font-size: 2.5rem;
+    /* color: rgba(8, 192, 100, 0.604); */
+    color: green;
+}
+
+#button-div span:hover {
+    color: orange;
+}
+
+#button-div #cart-count {
+    position: absolute;
+    width: 20px;
+    right: 4px;
+    font-size: 0.8rem;
+    top: -17px;
+    background: yellow;
+    border-radius: 100%;
+    text-align: center;
+
+}
+
+#login-btn,
+#signup-btn {
+    padding: 0.4rem;
+    box-shadow: 0 0 5px 1px green;
+    background: rgba(8, 192, 100, 0.604);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#login-btn:hover,
+#signup-btn:hover {
+    background: rgb(8, 192, 100);
+}
+
+#menubar-div {
+    display: none;
+}
+
+
+
+/* ======================container css starts here================== */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    border: 1px solid red;
+    width: 90%;
+    margin:1rem auto;
+    background: #9EBD6E;
+    
+}
+.container>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #9EBD6E;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+}
+.container>div>img{
+    height: 14rem;
+}
+.container>div>h1{
+    font-size: 1rem;
+    height:2rem;
+    text-align: center;
+    color: brown;
+    margin-bottom: 1rem;
+}
+.container>div>h2{
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: yellow;
+}
+.container>div>h3{
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    font-size: 1rem;
+    color: green;
+}
+.container>div>button{
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    background: aquamarine;
+    border: none;
+    border-radius: 10px;
+}
+.container>div>button:hover{
+    background: rgb(28, 202, 202);
+    box-shadow: 0 0 10px 5px aqua;
+    cursor: pointer;
+}
+.responsive{
+    display: flex;
+    width: 70%;
+    /* background: red; */
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 1120px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media only screen and (max-width: 770px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+  #header #list{
+        display: none;
+    }
+    #header #list.active{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: orange;
+        border-radius: 30px;
+        width: 200px;
+        height: 250px;
+        position: absolute;
+        right: 1rem;
+        top: 4.5rem;
+    }
+    #header #list.active #button-div #cart-icon{
+        margin: 1rem 0;
+    }
+    #header #list.active #button-div #cart-count{
+        margin-top: 1.5rem;
+        margin-right:0.5rem ;
+    }
+    #header #list.active #button-div #login-btn{
+position: relative;
+top: 2.5rem;
+left: 2rem;
+margin-top: 1rem;
+
+    }
+    #header #list.active #button-div #signup-btn{
+position: relative;
+top: 2.5rem;
+left: 2rem;
+margin-top: 1rem;
+
+    }
+    #header #list.active #button-div #logout{
+        position: relative;
+        top: 2rem;
+        left: 4rem;
+        margin-top: 1rem;
+    }
+    #menubar-div{
+        display:block ;
+        margin-right:1rem ;
+        font-size: 2rem
+    }
+  
+
+}
+@media only screen and (max-width: 495px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}

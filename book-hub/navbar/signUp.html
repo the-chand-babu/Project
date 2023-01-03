@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./signUp.css">
+</head>
+
+<body>
+    <div>
+        <div id="container">
+            <h2>Sign Up</h2>
+            <form action="">
+                <label id="namelabel" class="namelabel" for="">Full Name</label>
+                <input onchange="checkcred()" type="text" id="name" value="" placeholder="Enter Your Full Name">
+    
+                <label id="emaillabel" for="">Email</label>
+                <input onchange="checkcred()" type="email" id="email" placeholder="Enter Email">
+    
+                <label id="password-label" for="">Pasword</label>
+                <input onchange="checkcred()" type="password" id="Pasword" placeholder="Enter a password">
+                <p>By signing up, I accept the Book'sHub Term of Service and acknowledge the Privacy Policy.</p>
+                <br><input value="SignUp" type="submit" id="btn">
+            </form>
+            <h3>Already have an account? <a  target="_blank"
+                    href="./login.html">Sign In</a></h3>
+        </div>
+    </div>
+    
+    
+</body>
+
+</html>
+<script src="./signUp.js"></script>
+<script>
+    function checkcred() {
+
+        let userName = document.querySelector("#name").value;
+        let emailID = document.querySelector("#email").value;
+        let UserPasword = document.querySelector("#Pasword").value;
+        let btn = document.querySelector("#btn");
+
+        if (userName && emailID && UserPasword) {
+            let btn = document.querySelector("#btn");
+
+            btn.style.background = "blue";
+
+
+
+
+        }
+
+    }
+</script>

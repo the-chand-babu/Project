@@ -1,0 +1,34 @@
+
+#container p{
+    text-align: center;
+}
+#container{
+    width: 20%;
+    height:200px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background:rgba(237, 174, 57, 0.965);
+    
+}
+form{
+margin: auto;
+margin-top: 20px;
+    width: 80%;
+    
+}
+form>input{
+    margin-left: 10px;
+    width:40px;
+    height: 40px;
+    text-align: center;
+}
+
+input[type="submit"]{
+     margin-top: 20px;
+     width:87%;
+     background-color: rgb(41, 170, 239);
+     border: none;
+     color: white;
+     font-size: 20px;
+}

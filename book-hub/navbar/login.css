@@ -1,0 +1,178 @@
+/* img{
+  
+     width:8%;
+     margin: auto;
+     display: block;
+     margin-top: 50px;
+} */
+body{
+ height: 100vh;
+    background: url("https://img.freepik.com/premium-photo/row-old-books-yellow-shelf-horizontal-background-scene_118047-10751.jpg");
+    background-size: 100% 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+div{
+    position: absolute;
+    right: 20rem;
+    top: 3rem;
+    width: 400px;
+    
+    margin: auto;
+  
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    box-shadow: 0 0 13px 15px orange;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 0, 0.2);
+
+}
+h3{
+    margin-bottom: 0;
+    display: block;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    /* margin-top: 10px; */
+}
+#emaillabel{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: bold;
+    display: block;
+
+    margin-top: 2rem;
+  
+    /* margin-bottom: -10px; */
+    margin-left: 50px;
+
+
+}
+#email{
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+input{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0;
+    height: 28px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-color:orange ;
+}
+#forgot{
+  margin-right: 1rem;
+ 
+    text-align: end;
+   
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+    color: green;
+    font-weight: bold;
+
+}
+#forgot p{
+    margin-right: 10%;
+    margin-bottom: 0px;
+}
+#passwordlabel{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: bold;
+    display: block;
+    margin-left: 50px;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+input[type="submit"]{
+  display: flex;
+    width: 80%;
+    margin:0.8rem auto;
+    
+    border: none;
+    color: grey;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+    cursor: pointer;
+    border-color:orange ;
+}
+form #btn{
+    display: flex;
+    
+    justify-content: center;
+  
+  
+}
+button{
+    display: block;
+    width: 80%;
+    margin:0.5rem auto;
+    padding: 1rem;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius:5px;
+    color: rgb(89, 89, 89);
+    border-color:orange ;
+}
+button:hover{
+    cursor: pointer;
+}
+
+#linkSignUP{
+    text-align: center;
+    margin-top: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: black;
+    border-color:orange ;
+}
+#linkSignUP>a{
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1200px) {
+    button{
+        font-size: 0.8rem;
+    
+    }
+  }
+@media only screen and (max-width: 930px) {
+    button{
+        font-size: 0.6rem;
+    
+    }
+    #linkSignUP{
+       font-size: 1rem;
+    }
+    #linkSignUP>a{
+        font-size: 1rem;
+    }
+    input[type="submit"]{
+     font-size: 0.8rem;
+      }
+      #emaillabel,#passwordlabel{
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 1.8rem;
+      }
+      input{
+        width: 80%;
+      }
+  }
+  @media only screen and (max-width: 750px){
+    div{
+        position: absolute;
+        right: 1rem;
+        width: 300px;
+    }
+  }

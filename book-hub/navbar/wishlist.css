@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: black;
+    box-shadow: 2px 2px 5px 2px aqua;
+    width: 90%;
+    height: 4.5rem;
+    margin: .5rem auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 70px 0 70px;
+    color: aqua;
+}
+#log{
+    position: relative;
+}
+#booksbox{
+    display: flex;
+    
+}
+
+#logo i{
+    color: white;
+    margin-right:15px ;
+    cursor: pointer;
+    display: none;
+}
+/* .sidebar.active{
+    position: absolute;
+    height:200px;
+    width: 200px;
+    background: black;
+    z-index: 400;
+    left: 6rem;
+    top: 5rem;
+} */
+
+#logo {
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+    font-size: 35px;
+}
+
+#logo-book-icon {
+    font-size: 3rem;
+    color: aqua;
+}
+
+#logo>h2 {
+    font-size: 1.9rem;
+    font-style: italic;
+}
+
+#logo-span {
+    color: orange;
+}
+nav .list{
+    display: flex;
+    margin-right: 3rem;
+    align-items: center;
+    gap:2rem;
+}
+#home-btn,#logout-btn{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    border-color: aqua;
+    background: orange;
+}
+#home-btn:hover,#logout-btn:hover{
+    background: #9EBD6E;
+    color: white;
+    cursor:pointer
+}
+
+nav .list .cart{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+  
+}
+#cart-icon{
+    font-size: 2rem;
+}
+.cart:hover{
+cursor: pointer;
+
+color: #9EBD6E;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background: #9EBD6E;
+    /* background-color: blanchedalmond; */
+    box-shadow: 0 0 12px 5px white;
+    border-radius:  0 70px 0 70px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.container>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #9EBD6E;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+}
+.container>div>button{
+    width: 150px;
+    height: 2rem;
+    margin:0.2rem auto;
+    border-radius: 30px;
+}
+
+.cartadd-btn{
+    background-color:aquamarine;
+    border: none;
+}
+.cartadd-btn:hover{
+    background-color:aquamarine;
+    cursor: pointer;
+    box-shadow: 0 0 15px 5px aqua;
+}
+.remove-btn{
+    background: pink;
+    border: none;
+}
+.remove-btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 15px 5px rgb(249, 107, 131);
+}
+
+
+@media only screen and (max-width: 850px) {
+    #bookscart{
+        display: none;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+
+@media only screen and (max-width: 755px){
+    #logo i{
+        display: block;
+    }
+    #logo #logo-book-icon{
+      margin-left: 10rem;
+    }
+
+   
+    nav{
+        position: relative;
+    }
+    nav .list{
+        display: none;
+    }
+    .list.active{
+        display: block;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid aqua;
+        width: 100px;
+        gap: 1rem;
+        padding: 2rem;
+        background: black;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1000;
+        left:2rem;
+        top:4.5rem;
+        border-radius: 30px;
+    }
+    .list.active #username{
+        display: block;
+        /* border-bottom: 1px solid aqua; */
+        width: 100%;
+        /* padding: 1rem; */
+        margin: 0.5rem 0;
+       
+    }
+    .list.active button{
+        display: block;
+        border: 1px solid aqua;
+        border-bottom:1px solid aqua;
+        margin: 0.5rem 0;
+    }
+}
+@media only screen and (max-width: 529px){
+    #logo #logo-book-icon{
+        margin-left: 4rem;
+      }
+}
+@media only screen and (max-width: 382px){
+    #logo #logo-book-icon{
+        margin-left: 0rem;
+      }
+}
+
+
+@media only screen and (max-width: 635px){
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #logo span{
+        font-size: 1.5rem;
+    }
+    #logo h2{
+        font-size: 1.2rem;
+    }
+    #logo h2 span{
+        font-size: 1.2rem;
+    }
+    .list{
+        margin-left: 1rem;
+    }
+    .list span{
+        font-size: .9rem;
+    }
+ 
+}
+@media only screen and (max-width: 440px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}

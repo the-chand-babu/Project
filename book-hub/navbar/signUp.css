@@ -1,0 +1,122 @@
+body{
+    /* background: url("https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
+    background: url("https://media.istockphoto.com/id/907650310/photo/notebook-and-pencil-on-yellow-desk.jpg?s=612x612&w=0&k=20&c=MNSUTEhKL48d2Kg6EB9baZnGT59fwPKEVYumoujRgjQ=");
+
+    background-size:100%;
+    /* background-color: rgba(253, 181, 46, 0.778); */
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: black;
+}
+
+#container{
+    position: absolute;
+    top: 2rem;
+    right: 15rem;
+ 
+    width: 400px; 
+    height: 500px;   
+    margin: 3rem auto;
+   
+    box-shadow: 0 0 13px 15px orange;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 0, 0.2);
+    
+    
+}
+#container>h2{
+    margin-bottom: 0;
+    display: block;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    margin-bottom: 2.5rem;
+}
+
+
+#namelabel,#emaillabel,#password-label{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: bold;
+    display: block;
+
+    margin-top: 0.5rem;
+  
+    /* margin-bottom: -10px; */
+    margin-left: 50px;
+}
+
+#name{
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+input{
+    
+        display: flex;
+        width: 80%;
+        margin:0.5rem auto;
+        margin-bottom: 0;
+        height: 28px;
+        font-size: 15px;
+        border-radius: 5px;
+        border-color:orange ;
+    
+}
+
+p{
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+  
+    
+}
+
+input[type="submit"]{
+    display: flex;
+    width: 80%;
+    margin:0.8rem auto;
+    
+    border: none;
+    color: grey;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+    cursor: pointer;
+    border-color:orange ;
+}
+h3{
+    text-align: center;
+    color: rgb(142, 138, 138);
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+a{
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    /* text-decoration: none; */
+}
+h3>a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1183px){
+    #container{
+        position: absolute;
+        right: 5rem;
+        top: 1rem;
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 481px){
+    #container{
+        position: absolute;
+        right: 0;
+        top: 1rem;
+        width: 300px;
+    }
+}
